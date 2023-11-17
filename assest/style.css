@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid gray;
+    position: absolute;
+    left: 35vw;
+    width: 67vh;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1 , fr);
+    grid-template-areas: 
+    'a'
+    'm';
+    grid-template-rows: 37%;
+
+}
+
+/* top part start */
+
+.top{
+    grid-area: a;
+}
+
+.top img{
+    /* border: 1px solid green; */
+    height: 35vh;
+    width: 30vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* top part end */
+
+/* down part start */
+
+.down_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.down{
+    /* border: 1px solid purple; */
+    grid-area: m;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.down_p{
+    color: gray;
+}
+
+
+.plan img{
+    height: 40px;
+    width: 50px;
+    float: left;
+}
+
+.plan{
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    height: 80px;
+    width: 90%;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    background-color: #edf2fb;
+    border-radius: 5px;
+}
+
+.plan a{
+    color: blue;
+}
+
+.plan p{
+    color: black;
+}
+
+button{
+    width: 90%;
+    height: 40px;
+    color: white;
+    background-color: #023e7d;
+    border-radius: 5px;
+    box-shadow: 1px 10px 21px 6px rgba(204,219,253,0.61);
+}
+
+.plan font{
+    color: gray;
+}
+
+.cancel_order{
+    color: blue;
+}
+
+/* down part end */
+
+/* ---- media start 1025px — 1200px start ---- */
+
+@media (min-width:1025px) and (max-width:1200px)  {
+    .container{
+        border: 1px solid gray;
+        position: absolute;
+        left: 0px;
+        width: 85vh;
+        height: 100vh;
+    
+    }
+    
+    /* top part start */
+    
+    .top img{
+        /* border: 1px solid green; */
+        height: 35vh;
+        width: 97vw;
+    }
+    
+    /* top part end */
+    
+    /* down part start */
+    
+    .down{
+        /* border: 1px solid purple; */
+        width: 70%;
+        height: 95%;
+    }
+    
+    .plan img{
+        height: 40px;
+        width: 50px;
+    }
+    
+    .plan{
+        /* border: 1px solid goldenrod; */
+        display: flex;
+        height: 80px;
+        width: 90%;
+    }
+    
+    button{
+        width: 90%;
+        height: 40px;
+    }
+
+    
+    /* down part end */
+}
+/* ---- media start 1025px — 1200px end ---- */
+
+/* ---- media start 769px — 1024px start  ---- */
+
+@media (min-width:769px) and (max-width:1024px)  {
+    .container{
+        border: 1px solid gray;
+        position: absolute;
+        width: 75vh;
+        left: 0px;
+    }
+    
+    /* top part start */
+    
+    .top img{
+        /* border: 1px solid green; */
+        height: 35vh;
+        width: 97vw;
+    }
+    
+    /* top part end */
+    
+    /* down part start */
+    
+    .down{
+        /* border: 1px solid purple; */
+        width: 70%;
+        height: 95%;
+    }
+    
+    .plan img{
+        height: 40px;
+        width: 50px;
+    }
+    
+    .plan{
+        /* border: 1px solid goldenrod; */
+        display: flex;
+        height: 80px;
+        width: 90%;
+    }
+    
+    button{
+        width: 90%;
+        height: 40px;
+    }
+
+    
+    /* down part end */
+}
+
+/* ---- media start 769px — 1024px end ---- */
+
+/* ---- media start 481px — 768px start ---- */
+
+@media (min-width:481px) and (max-width:768px)  {
+    .container{
+        border: 1px solid gray;
+        position: absolute;
+        left: 0px;
+        width: 62vh;
+        height: 150vh;
+    }
+    
+    /* top part start */
+    
+    .top img{
+        /* border: 1px solid green; */
+        height: 50vh;
+        width: 98vw;
+    }
+    
+    /* top part end */
+    
+    /* down part start */
+    
+    .down{
+        /* border: 1px solid purple; */
+        width: 80%;
+        height: 95%;
+    }
+    
+    .plan img{
+        height: 40px;
+        width: 50px;
+    }
+    
+    .plan{
+        /* border: 1px solid goldenrod; */
+        display: flex;
+        height: 80px;
+        width: 90%;
+    }
+    
+    button{
+        width: 90%;
+        height: 40px;
+    }
+
+    
+    /* down part end */
+}
+
+
+/* ---- media start 481px — 768px end ---- */
+
+/* ---- media start 320px — 480px start ---- */
+@media (min-width:320px) and (max-width:480px)  {
+    .container{
+        border: 1px solid gray;
+        position: absolute;
+        left: 0px;
+        width: 65vh;
+        height: 150vh;
+    }
+    
+    /* top part start */
+    
+    .top img{
+        /* border: 1px solid green; */
+        height: 50vh;
+        width: 97vw;
+    }
+    
+    /* top part end */
+    
+    /* down part start */
+    
+    .down{
+        /* border: 1px solid purple; */
+        width: 90%;
+        height: 95%;
+    }
+    
+    .plan img{
+        height: 30px;
+        width: 50px;
+    }
+    
+    .plan{
+        /* border: 1px solid goldenrod; */
+        display: flex;
+        height: 80px;
+        width: 90%;
+    }
+    
+    button{
+        width: 90%;
+        height: 40px;
+    }
+
+    
+    /* down part end */
+}
+/* ---- media start 320px — 480px end ---- */
+
+
